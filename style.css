@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: slateblue;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.figures {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  background: brown;
+  border-radius: 50%;
+  margin-bottom: 17px
+}
+
+.innerDiv{
+  background-color: white;
+  position: relative;
+  width: 110px;
+  height: 100px;
+  left: 41px;
+  top: 49px;
+}
+
+.color,
+.shape {
+  margin-top: 20px;
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    background-color: black;
+    color: antiquewhite;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.color:hover,.shape:hover{
+    transform: scale(1.1);
+}
+
+
+.circle {
+    border-radius: 50%;
+    background-color:cornflowerblue;
+  }
+  
+  .triangle {
+    background-color: transparent;
+    left: 38px;
+    top: 40px;
+    width: 0;
+    height: 0;
+    border-bottom: 75px solid red;
+    border-right: 75px solid transparent
+  }
+  .innerDiv.square {
+    background-color: coral;
+    border-radius: 0;
+  }
